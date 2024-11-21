@@ -1,5 +1,5 @@
 import { HttpClient } from "@/core/data/interfaces/http-client.interface";
-import { orderMock } from "@/core/domain/__mocks__/order.mock"; // Mock de exemplo
+import { orderMock } from "@/core/domain/__mocks__/order.mock";
 import { buildOrdersAdapters } from "../order.adapters";
 
 const httpClient: HttpClient = {
