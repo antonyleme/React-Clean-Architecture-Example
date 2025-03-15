@@ -10,7 +10,7 @@ export const OrderViewCard: React.FC<OrderViewCardProps> = function (props) {
   const { order, services, handleToggleImage, canShowImage } =
     useOrderViewController(props);
 
-  if (!order.data) return <p>Loading</p>;
+  if (order.isLoading) return <p>Loading</p>;
 
   return (
     <div>
